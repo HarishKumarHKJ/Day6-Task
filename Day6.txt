@@ -1,0 +1,15 @@
+1.Find the culprit
+   <!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( “I’m JavaScript!’);
+ </script>
+ Whats the error in this ?
+</body>
+</html>
+
+Ans:  alert( "I’m JavaScript!");
+
+
+
