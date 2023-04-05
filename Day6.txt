@@ -74,5 +74,31 @@ let c = new Circle(5.5, "red")
 3.Write a “person” class to hold all the details
 
    Ans:
+      function Person(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+}
+
+const person = new Person("Harry Brook", "25", "Male");
+console.log(person);
+
+4.write a class to calculate the uber price.
+ 
+ Ans:
+   let baseFee = 30
+let cities = ["Chennai",  "Mayilapur" ]
+let uberRates = [10]
+
+let customerName = "Harry Brook" 
+let customerCity = "Chennai" 
+function getRate(customerCity) {
+  function uberRate(customerCity, index) {
+    let finalRate = (uberRates[index]) * baseFee
+    return finalRate
+  }
+  console.log("Hello",customerName, "welcome to the Uber your destignation fare is:", uberRate(customerCity, cities.indexOf(customerCity)))
+}
+getRate(customerCity)
      
 
